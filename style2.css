@@ -1,0 +1,208 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .header {
+    position: relative;
+    top: -20px;
+    width: 100%;
+    background: linear-gradient(90deg, #011627, #023e8a);
+    color: #fdfffc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .header h2 {
+    padding: 0.5em;
+    text-align: center;
+  }
+  
+  /* N-Queen Container */
+  div.n-queen {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 450px;
+  }
+  
+  /* Input Box Styling */
+  .inputbox {
+    position: relative;
+    top: 1.5em;
+  }
+  
+  .numberbox {
+    width: 100%;
+    font-size: 14px;
+    padding: 6px;
+    border: none;
+    border-bottom: 2px solid #2ec4b6;
+    outline: none;
+    background: transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  .numberbox:focus {
+    border-bottom: 2px solid #38b000;
+  }
+  
+  .inputbox label {
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    color: #2ec4b6;
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.3s ease;
+  }
+  
+  .inputbox input:focus ~ label,
+  .inputbox input:disabled ~ label,
+  .inputbox input:valid ~ label {
+    top: -12px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #38b000;
+  }
+  
+  /* Slider Styles */
+  .slider-container {
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    margin: 0 auto;
+    top: 4em;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    margin: 0 auto;
+    height: 7px;
+    border-radius: 7px;
+    background: linear-gradient(90deg, #e8eddf 60%, #023e8a 40%);
+    outline: none;
+    transition: background 0.3s ease;
+  }
+  
+  .slider:hover {
+    background: linear-gradient(90deg, #a8dadc 60%, #1d3557 40%);
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #fa7921;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #fa7921;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Play Button */
+  .play-button {
+    position: relative;
+    top: 80px;
+    left: 35%;
+    border: none;
+    color: #fdfffc;
+    width: 90px;
+    height: 40px;
+    background: linear-gradient(90deg, #f72585, #b5179e);
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .play-button:hover {
+    background: linear-gradient(90deg, #b5179e, #f72585);
+    transform: scale(1.1);
+  }
+  
+  /* Queen Arrangement */
+  .queen-arrangement {
+    position: relative;
+    top: 140px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #247ba0;
+  }
+  
+  /* Chess Board */
+  #n-queen-board {
+    position: relative;
+    display: flex;
+    width: 80%;
+    top: 150px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid #2ec4b6;
+    border-radius: 8px;
+  }
+  
+  #n-queen-board div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  
+  table {
+    position: relative;
+    border-collapse: collapse;
+    margin: -10px 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-self: center;
+  }
+  
+  td {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid #2ec4b6;
+  }
+  
+  h4 {
+    position: relative;
+    top: -5px;
+    padding: 8px;
+    width: 95%;
+    background: #023e8a;
+    align-self: center;
+    color: #fdfffc;
+    text-align: center;
+    border-radius: 4px 4px 0 0;
+  }
+  
